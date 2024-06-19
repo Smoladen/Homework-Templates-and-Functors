@@ -9,9 +9,10 @@ T square(T a){
 }
 template <typename T>
 std::vector<T> square(std::vector<T>& v) {
+     std::vector<T> result(v.size());
     for (size_t i = 0; i < v.size(); i++) {
-        v[i] = v[i] * v[i];
+         result[i] = square(v[i]);
     }
-    return v;
+    return result;
 }
 #endif

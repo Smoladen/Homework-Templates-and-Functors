@@ -10,7 +10,8 @@ int main()
     std::cout << "[IN]" << 5 << std::endl;
     std::cout << "[OUT]" << square(5)<< std::endl;
 
-    std::vector<int> v{ -1, 2, 3 };
+    //std::vector<int> v{ -1, 2, 3 };
+    std::vector<float> v{ -1.7, 2.5, 3.4 };
 
     std::cout << "[IN]";
     for (int i = 0; i < v.size(); i ++){
