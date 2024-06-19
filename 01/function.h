@@ -7,12 +7,11 @@ template <class T>
 T square(T a){
     return a * a;
 }
-template <>
-std::vector<int> square<std::vector<int>>(std::vector<int> v) {
+template <typename T>
+std::vector<T> square(std::vector<T>& v) {
     for (size_t i = 0; i < v.size(); i++) {
         v[i] = v[i] * v[i];
     }
     return v;
 }
-
 #endif

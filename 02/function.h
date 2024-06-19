@@ -1,7 +1,9 @@
 #ifndef FUNCTION_HEADER
 #define FUNCTION_HEADER
+
 #include <iostream>
 #include <vector>
+
 
 struct Size {
     size_t rows;
